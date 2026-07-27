@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7bef24a65b849351bc70cd75532998c4",
+    "content-hash": "5b5dbce053e7f8362dbb3524d687dd3f",
     "packages": [
         {
             "name": "brick/varexporter",
@@ -849,6 +849,50 @@
                 "source": "https://github.com/phar-io/version/tree/3.2.1"
             },
             "time": "2022-02-21T01:04:05+00:00"
+        },
+        {
+            "name": "php-db/phpdb-qa-tools",
+            "version": "0.1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-db/phpdb-qa-tools.git",
+                "reference": "7d8d8f56e65029d1d1cb8af6f8c5b2cd95fcec1d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-db/phpdb-qa-tools/zipball/7d8d8f56e65029d1d1cb8af6f8c5b2cd95fcec1d",
+                "reference": "7d8d8f56e65029d1d1cb8af6f8c5b2cd95fcec1d",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0"
+            },
+            "suggest": {
+                "phpunit/phpunit": "To run the shared test configuration (^11.5 || ^12.0)"
+            },
+            "default-branch": true,
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Shared QA toolchain for php-db components: Mago formatting, linting and static analysis, plus the PHPUnit baseline and CI workflow.",
+            "homepage": "https://github.com/php-db/phpdb-qa-tools",
+            "keywords": [
+                "coding-standards",
+                "formatter",
+                "linter",
+                "mago",
+                "phpdb",
+                "qa",
+                "static-analysis"
+            ],
+            "support": {
+                "forum": "https://github.com/php-db/phpdb-qa-tools/discussions",
+                "issues": "https://github.com/php-db/phpdb-qa-tools/issues",
+                "source": "https://github.com/php-db/phpdb-qa-tools"
+            },
+            "time": "2026-07-23T05:13:10+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -2382,7 +2426,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {},
+    "stability-flags": {
+        "php-db/phpdb-qa-tools": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
